@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sardar Ji Developers</title>
+  <meta name="description" content="Simple, respectful Sikh apps for Android: Gurbani Wallpapers and Daily Hukamnama.">
+  <style>
+    :root {
+      --bg: #0E1B2C;
+      --card: #15263B;
+      --line: #23384F;
+      --text: #EEF0F2;
+      --muted: #9FB0C2;
+      --gold: #C9A24A;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif;
+    }
+    main { max-width: 760px; margin: 0 auto; padding: 56px 16px 64px; }
+    header { margin-bottom: 40px; }
+    h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 8px; }
+    .rule { width: 56px; height: 3px; background: var(--gold); border-radius: 2px; margin: 16px 0; }
+    .lead { color: var(--muted); margin: 0; max-width: 560px; }
+    .apps { display: grid; gap: 16px; }
+    .app {
+      display: flex; gap: 16px; align-items: flex-start;
+      background: var(--card); border: 1px solid var(--line);
+      border-radius: 18px; padding: 20px;
+    }
+    .app img { width: 72px; height: 72px; border-radius: 18px; flex: none; }
+    .app h2 { font-size: 1.15rem; margin: 0 0 4px; }
+    .app p { margin: 0 0 12px; color: #D5DCE4; }
+    .links { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; }
+    .btn {
+      display: inline-block; background: var(--gold); color: #1A1407;
+      font-weight: 600; text-decoration: none; padding: 8px 16px; border-radius: 999px;
+    }
+    .soon { color: var(--gold); font-weight: 600; }
+    a { color: var(--gold); }
+    footer { margin-top: 48px; color: var(--muted); font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Sardar Ji Developers</h1>
+    <div class="rule"></div>
+    <p class="lead">Simple, respectful apps for the Sikh sangat. Gurbani in our
+    apps is loaded live from BaniDB and shown exactly as published.</p>
+  </header>
+
+  <section class="apps">
+    <article class="app">
+      <img src="images/gurbani-wallpapers.png" alt="Gurbani Wallpapers icon">
+      <div>
+        <h2>Gurbani Wallpapers</h2>
+        <p>Search any line of Gurbani and turn it into a beautiful phone wallpaper
+        or status image.</p>
+        <div class="links">
+          <a class="btn" href="https://play.google.com/store/apps/details?id=com.gurbaniwallpapers.gurbani_wallpapers">Get it on Google Play</a>
+          <a href="gurbani-wallpapers/privacy.html">Privacy policy</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="app">
+      <img src="images/daily-hukamnama.png" alt="Daily Hukamnama icon">
+      <div>
+        <h2>Daily Hukamnama</h2>
+        <p>Read the daily Hukamnama from Sri Darbar Sahib, with a gentle
+        notification each morning.</p>
+        <div class="links">
+          <span class="soon">Coming soon to Google Play</span>
+          <a href="daily-hukamnama/privacy.html">Privacy policy</a>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <footer>
+    <p>For support, use the developer contact details on each app's Google Play listing.</p>
+    <p>© 2026 Sardar Ji Developers</p>
+  </footer>
+</main>
+</body>
+</html>
